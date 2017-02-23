@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Angular Housing</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -12,8 +13,14 @@
 </head>
 
 <!--              coming from app.js -->
-<body ng-controller="HomeController">
-
+<body ng-controller="cribsController">
+    <!-- "cribs" is a property of $scope in cribsController.js -->
+    <div class="well" ng-repeat="crib in cribs">
+        <h3>{{ crib.address }}</h3>
+        <p><strong>Type:</strong> {{crib.type}}</p>
+        <p><strong>Description:</strong> {{crib.description}}</p>
+        <p><strong>Price:</strong> {{crib.price | currency}}</p>
+    </div>
 
 
 
@@ -26,5 +33,8 @@
     <script src="lib/jquery.min.js"></script>
     <script src="lib/angular-route.min.js"></script>
     <script src="app.js"></script>
+    <script src="js/cribsController.js"></script>
+    <script src="js/cribsFactory.js"></script>
+    <script src="js/cribsFilter.js"></script>
 </body>
 </html>
