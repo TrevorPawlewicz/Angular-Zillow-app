@@ -33,6 +33,7 @@
     <!-- Min and Max Price Selection -->
         <div class="col-sm-12 price-form">
 
+            <!-- ng-if: show div if "addListing" is false -->
             <div class="row price-form-row" ng-if="!addListing">
                 <div class="col-sm-6">
                     <div class="input-group">
@@ -87,6 +88,7 @@
             </button>
 
 
+            <!-- ng-if: show div if "addListing" is true -->
             <div class="listing-form" ng-if="addListing">
                 <h3>Add a Listing</h3>
 
@@ -185,7 +187,8 @@
                     ng-click="addCrib(newListing)"
                     ng-show="addListing">Add
                 </button>
-                
+
+                <!-- show the input as JSON data -->
                 <pre>{{newListing | json}}</pre>
             </div> <!-- end class="listing-form" ng-if="addListing" -->
 
@@ -316,7 +319,7 @@
 
     <!-- Real Estate Listings -->
     <div class="container">
-        <div class="col-sm-4" ng-repeat="crib in cribs | cribsFilter: priceInfo">
+        <div class="col-sm-4" ng-repeat="crib in cribs | cribsFilter: priceInfo | orderBy: '-id'">
 
             <div class="thumbnail">
                 <img ng-src="images/{{crib.image}}.jpg" alt="home">
