@@ -1,5 +1,5 @@
 Wireframe:
-![Wireframe Image](https://www.gliffy.com/go/publish/11822749?raw=true)
+![Wireframe Image](docs/images/angular_house_wireFrame.png?raw=true)
 
 https://www.gliffy.com/go/publish/11822749
 <script src="https://www.gliffy.com/diagramEmbed.js" type="text/javascript"></script>
