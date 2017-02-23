@@ -24,6 +24,7 @@ angular.module('ngCribs')
 
         // EDIT
         $scope.editCrib = function(crib) {
+            console.log("---> crib id: " + crib.id);
 			$scope.editListing = true;
 			$scope.existingListing = crib;
 		}
