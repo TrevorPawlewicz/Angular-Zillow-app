@@ -1,5 +1,6 @@
 Wireframe:
-![Wireframe Image](images/angular_house_wireFrame.png?raw=true)
+![Wireframe Image](https://www.gliffy.com/go/publish/11822749?raw=true)
+
 https://www.gliffy.com/go/publish/11822749
 <script src="https://www.gliffy.com/diagramEmbed.js" type="text/javascript"></script>
 <script type="text/javascript"> gliffy_did = "11822749"; embedGliffy(); </script>
